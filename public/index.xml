@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LibraryDS</title>
+    <title>Library Data Science</title>
     <link>/</link>
-    <description>Recent content on LibraryDS</description>
+    <description>Recent content on Library Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +16,22 @@
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/pandas/</guid>
-      <description>print(2/5)## 0.4</description>
+      <description>Что такое Pandas и зачем он нужен Pandas — это библиотека для работы с данными на Python. Она упрощает жизнь аналитикам: где раньше использовалось 10 строк кода теперь хватит одной.
+Например, чтобы прочитать данные из csv, в стандартном Python надо сначала решить, как хранить данные, затем открыть файл, прочитать его построчно, отделить значения друг от друга и очистить данные от специальных символов.
+&amp;gt; with open(&#39;file.csv&#39;) as f:... content = f.</description>
+    </item>
+    
+    <item>
+      <title>Обработка исключений Python — блок Try/Except, блок Finally</title>
+      <link>/post/python-try-except-finally/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/python-try-except-finally/</guid>
+      <description>1.Обработка исключений Python В этом материале речь пойдет о блоках try/except, finally и raise. Вместе с тем будет рассмотрено, как создавать собственные исключения в Python.
+##2. Обработка исключений в Python
+Рассмотрим разные типы исключений в Python, которые появляются при срабатывании исключения в коде Python.
+3. Блоки try/except Если код может привести к исключению, его лучше заключить в блок try. Рассмотрим на примере.
+try:for i in range(3):print(3/i)except:print(&amp;#34;Деление на 0&amp;#34;)print(&amp;#34;Исключение было обработано&amp;#34;)## Деление на 0## Исключение было обработаноПрограмма вывела сообщение, потому что было обработано исключение.</description>
     </item>
     
     <item>

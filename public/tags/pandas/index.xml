@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pandas on LibraryDS</title>
+    <title>pandas on Library Data Science</title>
     <link>/tags/pandas/</link>
-    <description>Recent content in pandas on LibraryDS</description>
+    <description>Recent content in pandas on Library Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +16,9 @@
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/pandas/</guid>
-      <description>print(2/5)## 0.4</description>
+      <description>Что такое Pandas и зачем он нужен Pandas — это библиотека для работы с данными на Python. Она упрощает жизнь аналитикам: где раньше использовалось 10 строк кода теперь хватит одной.
+Например, чтобы прочитать данные из csv, в стандартном Python надо сначала решить, как хранить данные, затем открыть файл, прочитать его построчно, отделить значения друг от друга и очистить данные от специальных символов.
+&amp;gt; with open(&#39;file.csv&#39;) as f:... content = f.</description>
     </item>
     
   </channel>

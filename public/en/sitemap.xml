@@ -53,6 +53,11 @@
   </url>
   
   <url>
+    <loc>/post/python-try-except-finally/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
@@ -70,6 +75,10 @@
                 hreflang="en"
                 href="/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tags/try/except/</loc>
   </url>
   
 </urlset>

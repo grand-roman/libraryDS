@@ -5,7 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Алексей Куличевский">
-<meta name="description" content="print(2/5)## 0.4" />
+<meta name="description" content="Что такое Pandas и зачем он нужен Pandas — это библиотека для работы с данными на Python. Она упрощает жизнь аналитикам: где раньше использовалось 10 строк кода теперь хватит одной.
+Например, чтобы прочитать данные из csv, в стандартном Python надо сначала решить, как хранить данные, затем открыть файл, прочитать его построчно, отделить значения друг от друга и очистить данные от специальных символов.
+&amp;gt; with open(&#39;file.csv&#39;) as f:... content = f." />
 <meta name="keywords" content=", pandas" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
@@ -14,7 +16,7 @@
 
     <title>
         
-            Аналитикам: большая шпаргалка по Pandas :: LibraryDS  — Hello Friend NG Theme
+            Аналитикам: большая шпаргалка по Pandas :: Library Data Science 
         
     </title>
 
@@ -40,19 +42,20 @@
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="Аналитикам: большая шпаргалка по Pandas">
-<meta itemprop="description" content="print(2/5)## 0.4">
+<meta itemprop="description" content="Что такое Pandas и зачем он нужен Pandas — это библиотека для работы с данными на Python. Она упрощает жизнь аналитикам: где раньше использовалось 10 строк кода теперь хватит одной.
+Например, чтобы прочитать данные из csv, в стандартном Python надо сначала решить, как хранить данные, затем открыть файл, прочитать его построчно, отделить значения друг от друга и очистить данные от специальных символов.
+&gt; with open(&#39;file.csv&#39;) as f:... content = f.">
 <meta itemprop="datePublished" content="2020-03-24T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-03-24T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3">
-<meta itemprop="image" content="/"/>
+<meta itemprop="wordCount" content="199">
 
 
 
-<meta itemprop="keywords" content="pandas," /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="/"/>
-
+<meta itemprop="keywords" content="pandas," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Аналитикам: большая шпаргалка по Pandas"/>
-<meta name="twitter:description" content="print(2/5)## 0.4"/>
+<meta name="twitter:description" content="Что такое Pandas и зачем он нужен Pandas — это библиотека для работы с данными на Python. Она упрощает жизнь аналитикам: где раньше использовалось 10 строк кода теперь хватит одной.
+Например, чтобы прочитать данные из csv, в стандартном Python надо сначала решить, как хранить данные, затем открыть файл, прочитать его построчно, отделить значения друг от друга и очистить данные от специальных символов.
+&gt; with open(&#39;file.csv&#39;) as f:... content = f."/>
 
 
 
@@ -131,8 +134,24 @@
             
 
             <div class="post-content">
-                <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">5</span>)
-</code></pre></div><pre><code>## 0.4
+                <h2 id="что-такое-pandas-и-зачем-он-нужен">Что такое Pandas и зачем он нужен</h2>
+<p>Pandas — это библиотека для работы с данными на Python. Она упрощает жизнь аналитикам: где раньше использовалось 10 строк кода теперь хватит одной.</p>
+<p>Например, чтобы прочитать данные из csv, в стандартном Python надо сначала решить, как хранить данные, затем открыть файл, прочитать его построчно, отделить значения друг от друга и очистить данные от специальных символов.</p>
+<pre><code>&gt; with open('file.csv') as f:
+...    content = f.readlines()
+...    content = [x.split(',').replace('\n','') for x in content]
+</code></pre><p>В Pandas всё проще. Во-первых, не нужно думать, как будут храниться данные — они лежат в датафрейме. Во-вторых, достаточно написать одну команду:</p>
+<pre><code>&gt; data = pd.read_csv('file.csv')
+</code></pre><p>Pandas добавляет в Python новые структуры данных — серии и датафреймы. Расскажу, что это такое.</p>
+<h2 id="структуры-данных-серии-и-датафреймы">Структуры данных: серии и датафреймы</h2>
+<p>Серии — одномерные массивы данных. Они очень похожи на списки, но отличаются по поведению — например, операции применяются к списку целиком, а в сериях — поэлементно.</p>
+<p>То есть, если список умножить на 2, получите тот же список, повторенный 2 раза.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">vector <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+vector <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+</code></pre></div><pre><code>## [1, 2, 3, 1, 2, 3]
+</code></pre><p>А если умножить серию, ее длина не изменится, а вот элементы удвоятся.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Потом доделаю дальше....&#39;</span>)
+</code></pre></div><pre><code>## Потом доделаю дальше....
 </code></pre>
             </div>
         </article>
@@ -154,9 +173,7 @@
         <div class="footer__content">
             <span>&copy; 2020</span>
             
-                <span><a href="/">Jane Doe</a></span>
-            
-            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span></span>
             <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
     </div>
@@ -176,7 +193,7 @@
 
 
 
-<script type="text/javascript" src="/bundle.js" integrity=""></script>
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
 
 
 
