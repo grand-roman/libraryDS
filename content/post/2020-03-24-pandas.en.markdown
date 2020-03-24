@@ -1,0 +1,27 @@
+---
+title: 'Аналитикам: большая шпаргалка по Pandas'
+author: Алексей Куличевский
+date: '2020-03-24'
+slug: pandas
+categories:
+  - Python
+tags:
+  - pandas
+comments: no
+images: ~
+---
+
+
+
+
+```python
+print(2/5)
+```
+
+```
+## 0.4
+```
+
+
+
+

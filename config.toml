@@ -1,5 +1,5 @@
-baseURL = "https://example.com"
-title   = "Hello Friend NG"
+baseURL = "/"
+title   = "LibraryDS"
 
 DefaultContentLanguage = "en"
 
@@ -35,7 +35,7 @@ disable404     = false
 disableHugoGeneratorInject = false
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/post/:year/:month/:title/"
 
 [author]
   name = "Jane Doe"
@@ -135,6 +135,6 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "about/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
+    identifier = "post"
+    name       = "Post"
+    url        = "post/"
