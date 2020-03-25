@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/5lab/libraryDS",
+	"sourceRoot": "/Users/grand-roman/Documents/GitHub/libraryDS",
 	"sources": [
 		"themes/hugo-theme-hello-friend-ng/assets/scss/main.scss",
 		"themes/hugo-theme-hello-friend-ng/assets/scss/_normalize.scss",
