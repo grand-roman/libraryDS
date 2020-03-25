@@ -7,7 +7,6 @@ categories:
   - python
 tags:
   - pandas
-toc: no
 images: ~
 ---
 ```{r setup, include=FALSE}
