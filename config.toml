@@ -36,7 +36,7 @@ disable404     = false
 disableHugoGeneratorInject = false
 
 [permalinks]
-  #posts = "/post/:year/:month/:title/"
+  posts = "/post/:year/:month/:title/"
 
 [blackfriday]
   hrefTargetBlank = true
