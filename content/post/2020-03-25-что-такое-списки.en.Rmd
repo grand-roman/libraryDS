@@ -1,0 +1,11 @@
+---
+title: Что такое списки?
+author: Кристина Ярлыкова
+date: '2020-03-25'
+slug: что-такое-списки
+categories:
+  - python
+tags: []
+images: ~
+---
+
