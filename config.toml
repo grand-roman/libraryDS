@@ -5,6 +5,8 @@ DefaultContentLanguage = "en"
 
 theme = "hugo-theme-hello-friend-ng"
 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
